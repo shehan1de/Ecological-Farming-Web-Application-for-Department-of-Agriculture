@@ -1,0 +1,127 @@
+.input-group {
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: .5s;
+    left: 5px;
+    font-family: var(--theme-font);
+    font-size: 17px;
+    padding: 0 5px;
+}
+
+.input-group label span{
+    color: red;
+}
+
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: calc(100% - 20px);
+    height: 35px;
+    background: transparent;
+    outline: none;
+    color: black;
+    font-family: var(--theme-font);
+    font-size: 17px;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 255);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.input-group input:focus {
+    border: 1px  solid var(--hover-color);
+    box-shadow: rgba(0, 4, 255, 0.08) 0px 10px 36px 0px, rgba(0, 60, 255, 0.06) 0px 0px 0px 1px;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: 0;
+    font-size: 13px;
+    color: var(--hover-color);
+    background-color: rgb(240, 240, 255);
+    border-radius: 5px;
+}
+
+
+/*  */
+
+
+.input-group textarea {
+    width: calc(100% - 20px);
+    height: 100px;
+    background: transparent;
+    outline: none;
+    color: black;
+    font-family: var(--theme-font);
+    font-size: 17px;
+    position: relative;
+    transition: all .3s ease;
+    padding: 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    resize: none;
+    background-color: rgb(240, 240, 255);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.input-group textarea:focus {
+    border: 1px solid var(--hover-color);
+    box-shadow: rgba(0, 4, 255, 0.08) 0px 10px 36px 0px, rgba(0, 60, 255, 0.06) 0px 0px 0px 1px;
+}
+
+
+
+.input-group textarea:focus~label,
+.input-group textarea:valid~label {
+    top: 0;
+    font-size: 12px;
+    color: var(--hover-color);
+    background-color: rgb(240, 240, 255);
+}
+
+/*  */
+
+.input-group input[type="date"] {
+    width: calc(100% - 20px);
+    height: 35px;
+    background: transparent;
+    outline: none;
+    color: black;
+    font-family: var(--theme-font);
+    font-size: 17px;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 255);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.input-group input[type="time"] {
+    width: calc(100% - 20px);
+    height: 35px;
+    background: transparent;
+    outline: none;
+    color: black;
+    font-family: var(--theme-font);
+    font-size: 17px;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 255);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,351 @@
+.contact-content{
+    width: 100%;
+    /* height: 200px; */
+    /* background-color: red; */
+    margin-top: 60px;
+}
+
+.contact-details{
+    width: 100%;
+    height: 300px;
+    /* background-color: blue; */
+    margin-top: 20px;
+    display: flex;
+}
+
+.contact-content-1{
+    width: 350px;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+
+.contact-content-2{
+    width: calc((100% - 350px));
+    height: 100%;
+    /* background-color: brown; */
+}
+
+
+/*  */
+
+
+.contact-header{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contact-header h2{
+    color: black;
+    font-size: var(--title-font-size);
+    font-family:var(--theme-font);
+}
+
+.contact-header p{
+    font-family: var(--theme-font);
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+}
+
+/*  */
+
+.contact-content-1,
+.contact-content-2 {
+    margin-top: 50px;
+}
+
+.contact-content-1 {
+    width: 500px;
+    /* background-color: aqua; */
+}
+
+.contact-content-1 .sec-hr {
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* contact locaiton */
+
+.contact-location {
+    display: flex;
+    width: 100%;
+}
+
+.contact-locaiton-content-1 {
+    display: flex;
+    align-items: center;
+}
+
+.contact-locaiton-content-1 i {
+    font-family: var(--theme-font);
+    font-size: 40px;
+    color: var(--hover-color);
+}
+
+.contact-locaiton-content-2 {
+    margin-left: 20px;
+}
+
+.contact-locaiton-content-2 h2 {
+    color: black;
+    font-size: 17px;
+    font-family: var(--theme-font);
+}
+
+
+.contact-locaiton-content-2 p {
+    font-family:var(--theme-font);
+    font-size: 17px;
+    line-height: 25px;
+}
+
+/* contact hotline */
+
+.contact-hotline {
+    display: flex;
+    width: 100%;
+}
+
+.contact-hotline-content-1 {
+    display: flex;
+    align-items: center;
+}
+
+.contact-hotline-content-1 i {
+    font-family: var(--theme-font);
+    font-size: 40px;
+    color: var(--hover-color);
+}
+
+.contact-hotline-content-2 {
+    margin-left: 20px;
+}
+
+.contact-hotline-content-2 h2 {
+    color: black;
+    font-size: 17px;
+    font-family: var(--theme-font);
+}
+
+.contact-hotline-content-2 p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contact-hotline-content-2 p a {
+    font-family: var(--theme-font);
+    font-size: 17px;
+    color: black;
+}
+
+.contact-hotline-content-2 p a:hover {
+    font-family: var(--theme-font);
+    font-size: 17px;
+    color: var(--hover-color);
+}
+
+
+/* contact mail */
+
+.contact-mail {
+    display: flex;
+    width: 100%;
+}
+
+.contact-mail-content-1 {
+    display: flex;
+    align-items: center;
+}
+
+.contact-mail-content-1 i {
+    font-family: var(--theme-font);
+    font-size: 40px;
+    color: var(--hover-color);
+}
+
+.contact-mail-content-2 {
+    margin-left: 20px;
+}
+
+.contact-mail-content-2 h2 {
+    color: black;
+    font-size: 17px;
+    font-family: var(--theme-font);
+}
+
+.contact-mail-content-2 p {
+    margin-top: 5px;
+}
+
+
+.contact-mail-content-2 p a {
+    font-family: var(--theme-font);
+    font-size: 17px;
+    color: black;
+}
+
+.contact-mail-content-2 p a:hover {
+    font-family: var(--theme-font);
+    font-size: 17px;
+    color: var(--hover-color);
+}
+
+
+
+.contact-content-2 {
+    width: calc(100% - 500px);
+    /* background-color: rgb(65, 42, 165); */
+}
+
+.contact-content-2-name,
+.contact-content-2-email-phone {
+    width: 100%;
+    display: flex;
+}
+
+.content-2-first-name,
+.content-2-last-name,
+.content-2-email,
+.content-2-phone {
+    width: calc(50% - 10px);
+}
+
+.content-2-last-name,
+.content-2-email {
+    margin-left: 20px;
+}
+
+.contact-content-2-subject,
+.contact-content-2-message,
+.contact-content-2-button {
+    width: 100%;
+}
+
+.contact-content-2-email-phone,
+.contact-content-2-subject,
+.contact-content-2-message {
+    margin-top: 40px;
+}
+
+.contact-content-2-message input {
+    height: 100px;
+}
+
+
+.contact-content-2-button {
+    margin-top: 20px;
+}
+
+.contact-content-2-button input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--hover-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-content-2-button input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    background-color: var(--theme-color);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: var(--theme-font);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.contact-content-2-button input:hover {
+    background-color: #017c0d;
+}
+
+
+@media(max-width: 992px) {
+    .contact {
+        display: block;
+        margin-top: 60px;
+    }
+
+    .contact-content-1,
+    .contact-content-2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-content-2 {
+        margin-top: 60px;
+    }
+
+    .contact-content-1 .sec-hr {
+        width: 100%;
+
+    }
+
+    .contact-content-2-email-phone,
+    .contact-content-2-subject,
+    .contact-content-2-message {
+        margin-top: 20px;
+    }
+
+}
+
+.contact-map{
+    width: 100%;
+    height: 500px;
+    /* background-color: yellow; */
+    margin-top: 60px;
+}
+
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+@media(max-width:768px) {
+    .contact-map {
+        height: var(--header-respons1-height);
+    }
+}
+
+@media(max-width:576px) {
+    .contact-map {
+        height: var(--header-respons2-height);
+    }
+}
+
+
+.header-error-message{
+    width: 100%;
+    /* height: 20px; */
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--theme-color);
+    position: relative;
+    /* left: -10px; */
+    display:flex;
+    align-items:center;
+    justify-content:left;
+}
+
+.header-error-message p{
+    font-family: var(--theme-font);
+    font-size: 14px;
+    color: white;
+    margin:0 !important;
+    margin-left:40px;
+}

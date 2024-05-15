@@ -1,0 +1,321 @@
+:root {
+    --header-height: 500px;
+    --header-respons1-height: 350px;
+    --header-respons2-height: 300px;
+    --title-font-size: 22px;
+}
+
+
+.seed-content {
+    width: 100%;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+@media(max-width: 768px) {
+
+    .header-content {
+        height: var(--header-respons1-height);
+    }
+
+}
+
+@media(max-width: 576px) {
+
+    .header-content {
+        height: var(--header-respons2-height);
+    }
+}
+
+.seeds {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.seeds-content {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+}
+
+.seeds-content-1,
+.seeds-content-2 {
+    width: calc(50% - 10px);
+}
+
+.seeds-content-1 h2 {
+    color: black;
+    font-size: var(--title-font-size);
+    font-family: var(--theme-font);
+}
+
+.location-content {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.location-content-1{
+    width: calc(100%);
+    display: flex;
+}
+
+.location-content-2{
+    width: calc(100% / 3 - 10px);
+    display: flex;
+}
+
+.location-content-2{
+    margin-left: 20px;
+}
+
+.location-list-1,
+.location-list-2 {
+    width: calc(50% - 10px);
+}
+
+.location-content ul li{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: var(--theme-font);
+    font-size: 17px;
+}
+
+.location-content ul li:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: rgb(240, 240, 255);
+    transform: scale(1.05);
+    color:  var(--hover-color);
+}
+
+
+/* .location-list p{
+    font-family: var(--abel);
+    font-size: 17px;
+} */
+
+.location-list-2,
+.location-list-4 {
+    margin-left: 20px;
+}
+
+
+.seeds-content-2 {
+    margin-left: 20px;
+}
+
+.location-search{
+    position: relative;
+}
+
+.search-bar{
+    width: 100%;
+    display:flex;
+}
+
+.search-bar input[type="text"]{
+    /* width: calc(100% - 100px - 20px); */
+    width: calc(100% - 15px);
+    height: 35px;
+    display:flex;
+    padding-left: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    outline: none;
+    font-family: var(--theme-font);
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    transition: border 0.3s ease;
+    background-color: rgb(240, 240, 255);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+   
+}
+
+.search-bar input[type="text"]:focus {
+    border: 1px  solid  var(--hover-color);
+    box-shadow: rgba(0, 4, 255, 0.08) 0px 10px 36px 0px, rgba(0, 60, 255, 0.06) 0px 0px 0px 1px;
+}
+
+.search-bar input[type="submit"]{
+    width: 100px;
+    height: 35px;
+    margin-left: 5px;
+    background-color: var(--hover-color);
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: var(--theme-font);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.search-bar input[type="submit"]:hover{
+    background-color: blue;
+}
+
+.map{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.search-content{
+    position: absolute;
+    top: 38px;
+    width: calc(100%);
+    left: 0;
+    max-height: 350px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x:hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: none;
+}
+
+.search-content ul li{
+    list-style: none;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    font-family: var(--theme-font);
+    font-size: 17px;
+    position: relative;
+}
+
+.search-content ul li:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+    background-color:  var(--hover-color);
+    /* transform: scale(1.05); */
+    color: #ffffff;
+}
+
+
+@media(max-width: 992px) {
+    .seeds-content {
+        display: block;
+    }
+
+    .seeds-content-1,
+    .seeds-content-2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .seeds-content-2 {
+        margin-top: 60px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .map {
+        height: var(--header-respons1-height);
+    }
+
+}
+
+@media(max-width: 576px) {
+
+    .map {
+        height: var(--header-respons2-height);
+    }
+}
+
+
+.search-result{
+    width: 100%;
+    /* height: 200px; */
+    /* background-color: blue; */
+    margin-top: 20px;
+}
+
+.search-result h2{
+    color: black;
+    font-size: var(--title-font-size);
+    font-family: var(--theme-font);
+}
+
+.search-result-address{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.search-result-address i{
+    color: black;
+    font-family: var(--theme-font);
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+.search-result-address p{
+    font-family: var(--theme-font);
+    font-size: 17px;
+}
+
+.search-result-contact{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.search-result-contact i{
+    color: black;
+    font-family: var(--theme-font);
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+.search-result-contact a{
+    color: black;
+    font-family: var(--theme-font);
+    font-size: 17px;
+}
+
+.search-result-contact a:hover{
+    color: var(--hover-color);
+}
+
+
+.search-result-email{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.search-result-email i{
+    color: black;
+    font-family: var(--theme-font);
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+.search-result-email a{
+    color: black;
+    font-family:var(--theme-font);
+    font-size: 17px;
+}
+
+.search-result-email a:hover{
+    color: var(--hover-color);
+}

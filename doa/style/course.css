@@ -1,0 +1,187 @@
+.course-header{
+    width: 100%;
+    height: 400px;
+    /* background-color: red; */
+    position: relative;
+}
+
+.course-header-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.course-header-content-details{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.course-header-content-details h3{
+    font-family: var(--theme-font);
+    color: white;
+    font-size: 30px;
+}
+
+.course-header-content-details button{
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: var(--theme-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.course-header-content-details button:hover{
+    background-color: var(--theme-color);
+    color: white;
+}
+
+.course-header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-content{
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 60px;
+    display: flex;
+}
+
+.course-content-1{
+    width:300px;
+    /* background-color: blueviolet; */
+}
+
+.course-content-2{
+    /* background-color: aqua; */
+    width: calc(100% - 300px);
+}
+
+.course-details{
+    display: flex;
+    margin-top: 20px;
+}
+
+.course-details:first-child{
+    margin: 0;
+}
+
+.course-content-1-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.course-content-1-icon i{
+    font-size: 20px;
+}
+
+.course-content-1-details{
+    width: calc(100% - 40px);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.course-content-1-details p{
+    font-family: var(--theme-font);
+    font-size: 14px;
+}
+
+.course-content-1-details h3{
+    font-family: var(--theme-font);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*  */
+
+.course-content-2 h3{
+    font-family: var(--theme-font);
+}
+
+.course-content-2 p{
+    font-family: var(--theme-font);
+    font-family: 14px;
+    margin-top: 20px;
+    color: rgb(60, 60, 60);
+}
+
+
+
+@media(max-width: 768px) {
+
+    .course-content{
+        display: block;
+    }
+
+    .course-content-1{
+        width: 100%;
+        /* display: flex;
+        justify-content: center; */
+        background-color: rgb(230, 230, 230);
+    }
+
+    .course-content-detials{
+        /* background-color: red; */
+        padding: 20px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .course-content-2{
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+.course-conten-3{
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.course-conten-3 button{
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid var(--theme-color);
+    border-radius: 5px;
+
+    color: var(--theme-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.course-conten-3 button:hover{
+    background-color: var(--hover-color);
+    color: white;
+}
+
+.delete{
+    margin-left:10px;
+    color:rgb(255, 255, 255) !important;
+    background: red !important;
+    border:none !important;
+}
+
+.delete:hover{
+    border:1px solid red !important;
+    background: white !important;
+    color:black !important;
+}
